@@ -24,8 +24,14 @@ header {
 }
 .main-content {
     height: calc(100% - 80px);
+    position: relative;
 }
 .main-content-background {
     width: 100%;
     min-height: calc(100% - 3px);
+    position: absolute;
+}
+.offers-wrapper {
+    position: relative;
+    color: #cccccc;
 }
