@@ -1,4 +1,8 @@
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     font-family: sans-serif;
     margin: 0;
 }
@@ -18,6 +22,10 @@ header {
     right: 30px;
     cursor: pointer;
 }
-.cart img {
-    
+.main-content {
+    height: calc(100% - 80px);
+}
+.main-content-background {
+    width: 100%;
+    min-height: calc(100% - 3px);
 }

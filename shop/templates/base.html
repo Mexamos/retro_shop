@@ -25,8 +25,10 @@
             </div>
         </div>
     </header>
-
-    {% block content %}
-    {% endblock %}
+    <div class="main-content">
+        <img class="main-content-background" src="{% static 'background-body.jpg' %}">
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 </html>
