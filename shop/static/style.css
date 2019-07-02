@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+header {
+    background: #3d2d0a;
+    color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.header-title {
+    font-size: 21px;
+}
+.cart {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+.cart img {
+    
+}
