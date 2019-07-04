@@ -4,10 +4,28 @@
 
 <div class="offers-wrapper">
 {% for offer in offers %}
-    
-    {{ offer.name }}
-
+<div class="offer-wrapper">
+    <div class="offer-img" title="Добавить в корзину">
+        <img src="{{ offer.image.url }}" alt="">
+    </div>
+    {{ offer.name }} - <span class="price">{{ offer.price }}</span>$
+</div>
 {% endfor %}
 </div>
+
+<script>
+    Array.from(document.querySelectorAll('.offer-wrapper')).forEach(function(offer) {
+        offer.addEventListener('click', function() {
+            let price = parseFloat(this.querySelector('span.price').innerHTML)
+            let cart_counter = document.querySelector('.offers-counter').innerHTML
+            if(cart_counter.length === 0) {
+                document.querySelector('.offers-counter').innerHTML = `${price}$`
+            }
+            else {
+                document.querySelector('.offers-counter').innerHTML = `${parseFloat(cart_counter) + price}$`
+            }
+        })
+    })
+</script>
 
 {% endblock %}

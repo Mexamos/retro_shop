@@ -21,6 +21,8 @@ header {
     position: absolute;
     right: 30px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .main-content {
     height: calc(100% - 80px);
@@ -33,5 +35,26 @@ header {
 }
 .offers-wrapper {
     position: relative;
-    color: #cccccc;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.offer-wrapper {
+    margin: 10px;
+    cursor: pointer;
+}
+.offer-wrapper:hover img {
+    box-shadow: 0 0 20px rgba(0,0,0);
+    transition: box-shadow .3s;
+}
+.offer-img img {
+    width: 200px;
+    min-height: 100%;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+.offers-counter {
+    margin-right: 5px;
 }
