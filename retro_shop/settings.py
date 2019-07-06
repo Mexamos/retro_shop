@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'retro_shop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'retro_shop',
+        'USER': 'retro_shopuser',
+        'PASSWORD': 'molirife1221',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
